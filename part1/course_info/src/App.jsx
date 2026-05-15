@@ -9,9 +9,9 @@ const Header = () => {
 
 const Part = (props) => {
   return(
-    <div>
-      <p>{props.exercise} {props.part}</p>
-    </div>
+      <p>
+        {props.part} {props.exercise}
+      </p>
   )
 }
 const Content = () => {
@@ -23,9 +23,9 @@ const Content = () => {
   const exercises3 = 14
   return(
     <div>
-      <Part part={part1} exercise={exercise1} />
-      <Part part={part2} exercise={exercise2} />
-      <Part part={part3} exercise={exercise3} />
+      <Part part={part1} exercise={exercises1} />
+      <Part part={part2} exercise={exercises2} />
+      <Part part={part3} exercise={exercises3} />
     </div>
   )
 }
