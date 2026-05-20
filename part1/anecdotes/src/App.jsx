@@ -28,12 +28,21 @@ const App = () => {
     //console.log(newVotes)
   }
 
+  const maxVote = Math.max(...Object.values(votes))
+  //console.log(maxVote)
+  const favoriteAnecdote = Object.keys(votes).find(key => votes[key] === maxVote)
+  //console.log(favoriteAnecdote)
+
   return (
     <div>
+      <h1>anecdotes</h1>
       <p>{anecdotes[selected]}</p>
       <p>has {votes[selected]} votes</p>
       <button onClick={newVote}>vote</button>
       <button onClick={newClick}>next anecdote</button>
+      <h1>anecdote with the most votes</h1>
+      <p>{anecdotes[favoriteAnecdote]}</p>
+      <p>has {maxVote} votes</p>
     </div>
   )
 }
