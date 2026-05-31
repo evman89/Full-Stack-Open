@@ -1,4 +1,4 @@
-/*/
+/*
 const Header = ({ name }) => {
   return (
     <h2>{name}</h2>
@@ -45,7 +45,7 @@ const Course = ({ course }) => {
     </div>
   )
 }
-/*/
+*/
 import Course from './components/Course'
 
 const App = () => {
